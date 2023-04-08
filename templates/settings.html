@@ -671,6 +671,14 @@
                 </div>
                 <div class="form-group">
                     <div class="form-row">
+                        <label for="wake-porcupine-access_key" class="col-form-label">Access Key</label>
+                        <div class="col">
+                            <input id="wake-porcupine-access_key" type="text" class="form-control" x-model="profile.wake.porcupine.access_key" :disabled="profile.wake.system != 'porcupine'">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
                         <label for="wake-porcupine-sensitivity" class="col-form-label">Sensitivity</label>
                         <div class="col-sm-auto">
                             <input id="wake-porcupine-sensitivity" type="text" class="form-control" x-model="profile.wake.porcupine.sensitivity" :disabled="profile.wake.system != 'porcupine'"> <span class="text-muted">(comma-separated)</span>
